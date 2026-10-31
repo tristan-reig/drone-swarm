@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multi-Agent Systems Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="sky"></canvas>
+  <div class="scanlines"></div>
+
+  <header class="hud">
+    <p class="context">English oral presentation, live demo</p>
+    <h1>Multi-agent systems:<br>a drone swarm</h1>
+    <p class="count"><span id="droneCount">0</span> drones in the air</p>
+  </header>
+
+  <div class="controls">
+    <label for="wordInput" class="visually-hidden">Word to draw</label>
+    <input id="wordInput" type="text" maxlength="20" placeholder="Type a word" autocomplete="off" spellcheck="false">
+    <div class="buttons">
+      <button id="addButton">Add 40</button>
+      <button id="removeButton">Remove 40</button>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/textTargets.js"></script>
+  <script src="js/drone.js"></script>
+  <script src="js/swarm.js"></script>
+  <script src="js/renderer.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
